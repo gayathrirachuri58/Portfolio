@@ -1,0 +1,452 @@
+/* --------------------
+
+   RESET & BASE
+
+--------------------- */
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+ 
+html {
+
+  scroll-behavior: smooth;
+
+}
+ 
+body {
+
+  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  color: #0f172a;
+
+  background-color: #ffffff;
+
+  line-height: 1.7;
+
+}
+ 
+/* --------------------
+
+   CONTAINER
+
+--------------------- */
+
+.container {
+
+  max-width: 1120px;
+
+  margin: 0 auto;
+
+  padding: 0 24px;
+
+}
+ 
+/* --------------------
+
+   NAVBAR
+
+--------------------- */
+
+.navbar {
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 100;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+
+}
+ 
+.navbar-inner {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  height: 72px;
+
+}
+ 
+.logo {
+
+  font-weight: 700;
+
+  font-size: 1.1rem;
+
+  color: #020617;
+
+}
+ 
+.nav-links {
+
+  list-style: none;
+
+  display: flex;
+
+  gap: 28px;
+
+}
+ 
+.nav-links a {
+
+  text-decoration: none;
+
+  font-size: 0.95rem;
+
+  color: #334155;
+
+}
+ 
+.nav-links a:hover {
+
+  color: #2563eb;
+
+}
+ 
+/* --------------------
+
+   HERO
+
+--------------------- */
+
+.hero {
+
+  padding: 96px 0 88px;
+
+  background: linear-gradient(
+
+    180deg,
+
+    #f8fafc 0%,
+
+    #ffffff 100%
+
+  );
+
+}
+ 
+.hero h1 {
+
+  font-size: 2.6rem;
+
+  font-weight: 700;
+
+  margin-bottom: 12px;
+
+}
+ 
+.hero h1 span {
+
+  color: #2563eb;
+
+}
+ 
+.hero-title {
+
+  font-size: 1.2rem;
+
+  font-weight: 500;
+
+  color: #334155;
+
+  margin-bottom: 18px;
+
+}
+ 
+.hero-description {
+
+  max-width: 720px;
+
+  font-size: 1.05rem;
+
+  color: #475569;
+
+  margin-bottom: 18px;
+
+}
+ 
+.hero-tech {
+
+  max-width: 760px;
+
+  font-size: 0.95rem;
+
+  color: #64748b;
+
+  margin-bottom: 28px;
+
+}
+ 
+/* --------------------
+
+   BUTTONS
+
+--------------------- */
+
+.hero-actions {
+
+  display: flex;
+
+  gap: 16px;
+
+  flex-wrap: wrap;
+
+}
+ 
+.btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  font-size: 0.95rem;
+
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+
+}
+ 
+.btn.primary {
+
+  background-color: #2563eb;
+
+  color: #ffffff;
+
+}
+ 
+.btn.primary:hover {
+
+  background-color: #1d4ed8;
+
+}
+ 
+.btn.secondary {
+
+  background-color: #f1f5f9;
+
+  color: #0f172a;
+
+}
+ 
+.btn.secondary:hover {
+
+  background-color: #e5e7eb;
+
+}
+ 
+/* --------------------
+
+   SECTIONS
+
+--------------------- */
+
+.section {
+
+  padding: 80px 0;
+
+}
+ 
+.subtle-section {
+
+  background-color: #f8fafc;
+
+}
+ 
+.highlight-section {
+
+  background-color: #f1f5f9;
+
+}
+ 
+.section h2 {
+
+  font-size: 1.7rem;
+
+  font-weight: 700;
+
+  margin-bottom: 20px;
+
+  color: #020617;
+
+}
+ 
+.section p {
+
+  max-width: 820px;
+
+  color: #334155;
+
+  margin-bottom: 16px;
+
+}
+ 
+/* --------------------
+
+   LISTS / POINTS
+
+--------------------- */
+
+.project-points {
+
+  list-style: none;
+
+  margin-top: 16px;
+
+}
+ 
+.project-points li {
+
+  margin-bottom: 10px;
+
+  padding-left: 22px;
+
+  position: relative;
+
+  color: #0f172a;
+
+}
+ 
+.project-points li::before {
+
+  content: "•";
+
+  position: absolute;
+
+  left: 0;
+
+  color: #2563eb;
+
+  font-weight: bold;
+
+}
+ 
+/* --------------------
+
+   CARDS
+
+--------------------- */
+
+.project-card {
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  padding: 28px;
+
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+
+  margin-top: 24px;
+
+}
+ 
+.project-card.highlight {
+
+  border: 1px solid #dbeafe;
+
+  background: #f8fafc;
+
+}
+ 
+.project-card h3 {
+
+  font-size: 1.1rem;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+
+}
+ 
+/* --------------------
+
+   TEXT UTILITIES
+
+--------------------- */
+
+.small-text {
+
+  font-size: 0.9rem;
+
+  color: #64748b;
+
+}
+ 
+.confidential-note {
+
+  margin-top: 14px;
+
+  font-size: 0.9rem;
+
+  color: #b91c1c;
+
+}
+ 
+/* --------------------
+
+   FOOTER / CONTACT
+
+--------------------- */
+
+#contact .hero-actions {
+
+  margin-top: 20px;
+
+}
+ 
+/* --------------------
+
+   RESPONSIVE
+
+--------------------- */
+
+@media (max-width: 768px) {
+
+  .hero {
+
+    padding: 72px 0 64px;
+
+  }
+ 
+  .hero h1 {
+
+    font-size: 2.1rem;
+
+  }
+ 
+  .section {
+
+    padding: 64px 0;
+
+  }
+ 
+  .nav-links {
+
+    gap: 18px;
+
+  }
+
+}
+ 
